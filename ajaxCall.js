@@ -25,7 +25,7 @@ $(document).ready(function(){
         //post with ajax
         $.ajax({
             type:"POST",
-            url: "/Work folders/OOP php/RESTFUL traversy/php_rest_myblog/api/post/create.php",
+            url: "api/post/create.php",
             data: test,
             ContentType:"application/json",
 
@@ -48,7 +48,7 @@ $(document).ready(function(){
        
        var req;
        req=new XMLHttpRequest();
-       req.open("GET", '/Work folders/OOP php/RESTFUL traversy/php_rest_myblog/api/post/read.php',true);
+       req.open("GET", 'api/post/read.php',true);
        req.send();
       
        req.onload=function(){
